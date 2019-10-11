@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base File</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+</head>
+<style>
+    ul{
+        float: right;
+        list-style-type: none;
+        {#list-style-type: none;#}
+        {#margin: 0;#}
+        {#padding: 0;#}
+        {#overflow: hidden;#}
+        {#background-color: red;#}
+    }
+    ul li a{
+    text-decoration: none;
+    font-size: 40px;
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+    background-color: chocolate;
+
+    }
+    li {
+        float: left;
+    }
+    {#li a{#}
+    {#    display: block;#}
+    {#    color: white;#}
+    {#    text-align: center;#}
+    {#    padding: 20px 30px;#}
+    {#    text-decoration: none;#}
+    {#    font-size: 20px;#}
+    {#}#}
+    .active{
+        background-color: blue;
+    }
+    li a:hover{
+        background-color: aqua;
+        color: blue;
+    }
+    .footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: green;
+        color: white;
+        text-align: center;
+    }
+    #h11{
+        font-size: 50px;
+        text-shadow: 5px 5px 5px red;
+        margin: -10px;
+    }
+    body{
+        background-color: darkcyan;
+        color: blue;
+
+    }
+    #name1{
+        font-size: 30px;
+        font-family: "Agency FB";
+        text-shadow: 2px 2px blue;
+        color: red;
+
+
+    }
+
+
+</style>
+<body>
+<ul>
+    <li><a href="/home/" class="active">Home</a></li>
+    <li><a href="/contact/">Contact</a></li>
+    <li><a href="/courses/">Courses</a></li>
+    <li><a href="/feedback/">Feedback</a></li>
+    <li><a href="/team/">Our Team</a></li>
+    <li><a href="/gallery/">Gallery</a></li>
+</ul>
+<marquee><h1 align="center" id="h11">Welcome To MarkSoft</h1></marquee>
+{% block content %}
+{% endblock %}
+</body>
+<footer class="footer">
+    <h1>Thank You All</h1>
+</footer>
+</html>
