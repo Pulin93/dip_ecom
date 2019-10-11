@@ -48,6 +48,3 @@ def team_page(request):
 
 def gellery_page(request):
     return render(request,'gellery_page.html')
-
-def git_repo(request):
-    pass
