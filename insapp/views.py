@@ -51,3 +51,6 @@ def gellery_page(request):
 
 def git_repo(request):
     pass
+
+def git_2nrepo(request):
+    pass
